@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Georgia&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Lil J's Wear</h1>
-      <form id="checkout-form">
-        <label for="terms-checkbox">
-          <input type="checkbox" id="terms-checkbox"> I agree to the terms and conditions
-        </label>
-        <br>
-        <button id="checkout-button" disabled>Checkout</button>
-      </form>
-      <p>&copy; 2023 Lil J's Wear</p>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>Checkout</title>
+	<link rel="stylesheet" type="text/css" href="assets/styleP.css">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label>
+				<input type="checkbox" name="agree" id="agree" required>
+				<span>I have read and agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</span>
+			</label>
+			<button type="submit" id="checkout-btn" disabled>CHECKOUT</button>
+		</form>
+		<div class="spot"></div>
+	</div>
+
+	<footer>
+		<p>&copy; Lil J's Wear</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
 </html>

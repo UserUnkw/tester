@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	font-family: Georgia, serif;
+}
+
+body {
+	background: linear-gradient(to bottom, #7048e8, #ff007f, #ffa500);
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: linear-gradient(to right, #7048e8, #ff007f, #ffa500);
+	border: 30px solid #000;
+	padding: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 48px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+label span {
+	margin-left: 20px;
+}
+
+input[type="checkbox"] {
+	margin-right: 20px;
+	transform: scale(3);
+}
+
+button {
+	background: #000;
+	border: 10px solid #ff007f;
+	color: #fff;
+	padding: 60px 120px;
+	font-size: 72px;
+	border-radius: 50px;
+	transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+	transform: scale(1.2);
+}
+
+button:disabled {
+	background: #444;
+}
+
+
+
+@keyframes spot-pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 48px;
+	color: #fff;
+}
