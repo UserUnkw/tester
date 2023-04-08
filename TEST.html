@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkmark Example</title>
+    <link rel="stylesheet" type="text/css" href="assets/styleP.css">
+	<script>
+		function enableButton() {
+			var checkbox = document.getElementById("myCheckbox");
+			var button = document.getElementById("myButton");
+			if (checkbox.checked) {
+				button.disabled = false;
+			} else {
+				button.disabled = true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="myCheckbox" onclick="enableButton()">
+	<label for="myCheckbox">&#10003; Checkmark</label>
+	<br><br>
+    <a href="Payment.html"><button id="myButton" disabled>Submit</button></a>
+</body>
+</html>

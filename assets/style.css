@@ -105,7 +105,7 @@ main {
 	margin-bottom: 2em;
 	background-color: #fff;
 	border: 1px solid #ddd;
-	padding: 1em;
+	padding: 0.4em;
 }
 
 .product-item img {
@@ -115,12 +115,12 @@ main {
 .product-item h3 {
 	font-size: 1.2em;
 	margin-top: 0.5em;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.3em;
 }
 
 .product-item p {
 	font-size: 1.2em;
-	margin: 0.2em 0;
+	margin: 0.5em 0;
 }
 
 .buy-button {

@@ -6,12 +6,12 @@
 </head>
 <body>
 	<div class="container">
-		<form>
+		<form action="Payment.html">
 			<label>
-				<input type="checkbox" name="agree" id="agree" required>
+				<input type="checkbox" name="agree" id="agree" onclick="enableButton()">
 				<span>I have read and agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</span>
 			</label>
-			<button type="submit" id="checkout-btn" disabled>CHECKOUT</button>
+			<a href="Payment.html"><button id="checkout-btn" disabled>CHECKOUT</button></a>
 		</form>
 		<div class="spot"></div>
 	</div>
@@ -20,6 +20,16 @@
 		<p>&copy; Lil J's Wear</p>
 	</footer>
 
-	<script src="script.js"></script>
+	<script>
+	function enableButton() {
+			var checkbox = document.getElementById("agree");
+			var button = document.getElementById("checkout-btn");
+			if (checkbox.checked) {
+				button.disabled = false;
+			} else {
+				button.disabled = true;
+			}
+		}
+	</script>
 </body>
 </html>

@@ -65,8 +65,6 @@ button:disabled {
 	background: #444;
 }
 
-
-
 @keyframes spot-pulse {
 	0% {
 		transform: scale(1);
